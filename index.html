@@ -3,12 +3,24 @@
 
 <head>
     <meta charset=utf-8/>
+    <title>ic-06</title>
+    <script type="text/javascript" src="./ext.js"></script>
 </head>
 
 
 <body>
-
-
+    <h1>Javascript Part 2</h1>
+    <svg viewBox="0 0 400 200">
+	<line id=line x1="0" y1="150" x2="400" y2="150" stroke=blue stroke-width="10" />
+	<rect width="400" height="200" fill="white" fill-opacity=0 stroke=black />
+	<circle cx="360" cy="40" r="40" fill=purple onmouseover="fill_change('orange')" onmouseout="fill_change('purple')" />
+    </svg>
+    <button onclick="line_change()">Click here</button>
+    <h2>Acknowledgements</h2>
+    <ul>
+	<li>https://www.w3schools.com/js/js_htmldom_eventlistener.asp</li>
+	<li>https://www.w3schools.com/html/default.asp</li>
+    </ul>
 </body>
 
 </html>
